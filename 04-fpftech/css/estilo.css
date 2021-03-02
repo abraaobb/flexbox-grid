@@ -22,15 +22,11 @@ a:hover {
 
 header {
     width: 100%;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #fff;
 }
 
 header img {
@@ -41,100 +37,86 @@ header ul {
     display: flex;
 }
 
-header li a {
-    color: #191c03;
-}
-
 header li {
     margin: 0 15px;
 }
 
-header li:first-child {
-    margin-left: 0;
-}
-
-header li:last-child {
-    margin-right: 0;
+header li a {
+    font-size: 1.5em;
+    color: #191c03;
 }
 
 @media(max-width: 700px) {
     header {
         flex-direction: column;
-        height: 150px;
+        height: 250px;
         justify-content: center;
-    }
-
-    header img {
-        margin-bottom: 15px;
     }
 }
 
-.hero {
-    background-image: url('../img/hero.jpg');
+.capa {
+    background-image: url(../img/capa.jpg);
     background-size: cover;
     min-height: 100vh;
+    background-position: center center;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 80px;
 }
 
-.hero h1 {
-    font-size: 3.2rem;
+.capa h1 {
+    font-size: 3.2em;
     margin-bottom: 15px;
 }
 
-.hero h3 {
-    font-size: 2rem;
+.capa h3 {
+    font-size: 2em;
     margin-bottom: 15px;
 }
 
-.hero .btn {
+.capa .btn {
     background-color: #fff;
-    border-radius: 4px;
-    color: #191c03;
+    border-radius: 50px;
     padding: 20px 50px;
+    color: #191c03;
     text-transform: uppercase;
 }
 
 @media(max-width: 700px) {
-    .hero{
-        margin-top: 0;
-    }
-    .hero h1 {
-        font-size: 2.5rem;
+    .capa h1 {
+        font-size: 2.5em;
     }
 
-    .hero h3 {
-        font: 1.5rem;
+    .capa h3 {
+        font-size: 1.5em;
     }
 }
 
-.conheca-hotel {
+.apto {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 50px;
 }
 
-.conheca-hotel h3 {
-    font-size: 2rem;
+.apto h3 {
+    font-size: 2em;
     margin-bottom: 35px;
     color: #191c03;
     text-align: center;
 }
 
-.conheca-hotel p {
+.apto p {
     max-width: 800px;
     margin-bottom: 35px;
     color: #191c03;
     text-align: center;
 }
 
-.conheca-hotel hr {
+.apto hr {
     width: 200px;
     height: 2px;
     background-color: #191c03;
@@ -142,39 +124,37 @@ header li:last-child {
     border: none;
 }
 
-.conheca-hotel .grid {
+.apto .grid {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.conheca-hotel .grid li {
+.apto .grid li {
     height: 350px;
     padding: 20px;
-    border-radius: 4px;
     background-clip: content-box;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
-.conheca-hotel .grid li.small {
+.apto .grid li.small {
     flex-basis: 40%;
 }
 
-.conheca-hotel .grid li.large {
+.apto .grid li.large {
     flex-basis: 60%;
 }
 
 @media(max-width: 700px) {
 
-    .conheca-hotel .grid li.small,
-    .conheca-hotel .grid li.large {
+    .apto .grid li.small,
+    .apto .grid li.large {
         flex-basis: 100%;
     }
-
 }
 
-.caracteristicas {
+.casos {
     background-color: #191c03;
     display: flex;
     flex-direction: column;
@@ -182,21 +162,20 @@ header li:last-child {
     padding: 100px 50px;
 }
 
-.caracteristicas h3 {
-    font-size: 2rem;
+.casos h3 {
+    font-size: 2em;
     margin-bottom: 35px;
     color: #fff;
-    text-align: center;
 }
 
-.caracteristicas p {
+.casos p {
     max-width: 800px;
     margin-bottom: 35px;
     color: #fff;
     text-align: center;
 }
 
-.caracteristicas hr {
+.casos hr {
     width: 200px;
     height: 2px;
     background-color: #fff;
@@ -204,61 +183,60 @@ header li:last-child {
     border: none;
 }
 
-.caracteristicas .grid {
+.casos .grid {
     width: 100%;
     display: flex;
 }
 
-.caracteristicas .grid li {
+.casos .grid li {
     padding: 0 30px;
     text-align: center;
 }
 
-.caracteristicas .grid li i {
+.casos .grid li i {
     color: #c3c63b;
-    font-size: 3.5rem;
+    font-size: 3.5em;
     margin-bottom: 30px;
 }
 
-.caracteristicas .grid li h4 {
-    font-size: 1.5rem;
+.casos .grid li h4 {
+    font-size: 1.5em;
     color: #c3c63b;
     margin-bottom: 30px;
 }
 
-.caracteristicas .grid li p {
+.casos .grid li p{
     color: #fff;
 }
 
-@media(max-width: 850px) {
-
-    .caracteristicas .grid {
+@media(max-width: 850px){
+    .casos .grid{
         flex-direction: column;
     }
 }
 
-.newslatter {
+.news{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 50px;
 }
 
-.newslatter h3 {
-    font-size: 2rem;
+.news h3{
+    font-size: 2em;
     margin-bottom: 35px;
     color: #191c03;
     text-align: center;
 }
 
-.newslatter p {
+.news p{
     max-width: 800px;
     margin-bottom: 35px;
     color: #191c03;
     text-align: center;
 }
 
-.newslatter hr {
+.news hr{
     width: 200px;
     height: 2px;
     background-color: #191c03;
@@ -266,7 +244,7 @@ header li:last-child {
     border: none;
 }
 
-.newslatter form {
+.news form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,25 +253,23 @@ header li:last-child {
     max-width: 800px;
 }
 
-.newslatter input {
+.news input{
     padding: 15px;
     border: 1px solid #191c03;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-right: 15px;
     flex-grow: 1;
 }
 
-.newslatter button {
+.news button{
     padding: 15px;
     border: none;
     background-color: #191c03;
     color: #c3c63b;
-    border-radius: 4px;
-    margin-right: 15px;
 }
 
 @media(max-width: 700px) {
-    .newslatter input {
+    .news input {
         flex-basis: 100%;
         margin-bottom: 15px;
     }
